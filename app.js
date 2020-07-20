@@ -219,9 +219,43 @@
 
 // // Task # 1
 
+// function welcome(){
+//     alert("Welcome!");
+// }
 
 
 // // Task # 2
+
+// function phone() {
+//     alert("Thanks for purchasing phone from us!");
+// }
+
+
+// // Task # 3
+
+// function std_delete(std) {
+//     var row = std.parentNode.parentNode.rowIndex;
+//     document.getElementById("table").deleteRow(row);
+// }
+
+
+
+// // Task # 4
+
+// In index.html File
+
+
+// // Task # 5
+
+// var count = 0;
+// function counter_increase() {
+//     count++;
+//     document.getElementById('counter').innerHTML = count;
+// }
+// function counter_decrease() {
+//     count--;
+//     document.getElementById('counter').innerHTML = count;
+// }
 
 
 
@@ -229,9 +263,25 @@
 
 // // Task # 1
 
+// function submit() {
+//     var fname = document.getElementById('fname').value;
+//     var lname = document.getElementById('lname').value;
+//     var email = document.getElementById('email').value;
+//     document.write("Full Name: " + fname + " " + lname);
+//     document.write("<br>Email: " + email);
+// }
+
 
 // // Task # 2
 
+// function readMore() {
+//     var text ="<h1>Details</h1>"
+//     +"<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro similique voluptate tempora rem maxime,"
+//     +"    provident commodi asperiores mollitia, impedit eligendi exercitationem aut quaerat dolorem molestias"
+//     +"    excepturi! Consequuntur culpa odit sint. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro similique voluptate tempora rem maxime, provident commodi asperiores mollitia, impedit eligendi exercitationem aut quaerat dolorem molestias excepturi! Consequuntur culpa odit sint.</p>";
+//     var item = document.getElementById('item');
+//     item.innerHTML = text;
+// }
 
 
 // // Task # 3
@@ -290,10 +340,6 @@
 // }
 
 
-
-
-
-
 // // Task # 2
 
 // para.style.fontSize = "15px";
@@ -309,6 +355,28 @@
 
 
 
-// // Task # 12
-// // Task # 13
-// // Task # 14
+// // Assignment # 58-67
+
+
+// // Task # 1
+
+
+
+// // Task # 2
+
+
+
+
+// // Task # 3
+
+
+
+
+
+// // Task # 4
+
+
+
+
+
+// // Task # 5
