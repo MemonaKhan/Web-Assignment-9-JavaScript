@@ -360,23 +360,51 @@
 
 // // Task # 1
 
+// // i
+// main = document.getElementById('main-content');
+
+// // ii
+// var node = document.getElementById('main-content').childNodes;
+// console.log(node);
+
+// // iii
+// var render = document.getElementsByClassName('render');
+// for (var i = 0; i < render.length; i++) {
+//     console.log(render[i].innerHTML);
+// }
+
+// // iv
+// document.getElementById('first-name').value = "Jones";
+
+// // v
+// document.getElementById('last-name').value = 'Mark';
+// document.getElementById('email').value = 'jmk@gmail.com';
 
 
 // // Task # 2
 
+// // i
+// document.write(document.getElementById('form-content').nodeType);
 
+// ii
+// document.write(document.getElementById('last-name').nodeType);
+// var cNodes = document.getElementById('last-name').childNodes;
+// for(var i =0; i<cNodes.length;i++){
+//     document.write(cNodes[i].nodeType);
+// }
 
+// // iii
+// var cn = document.getElementById('last-name');
+// cn.childNodes= 'p';
 
-// // Task # 3
+// // iv 
+// document.write(document.getElementById('main-content').firstChild);
+// document.write(document.getElementById('main-content').lastChild);
 
+// // v
+// document.write(document.getElementById('last-name').nextSibling);
+// document.write(document.getElementById('last-name').previousSibling);
 
-
-
-
-// // Task # 4
-
-
-
-
-
-// // Task # 5
+// // vi
+// document.write(document.getElementById('email').parentNode);
+// document.write(document.getElementById('email').nodeType);
