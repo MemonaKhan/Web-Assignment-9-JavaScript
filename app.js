@@ -2,63 +2,215 @@
 
 // // Task # 1
 
-// function power(a,b){
+// function power(a, b) {
 //     var ans = 1;
-//     for(var i = 1; i<=b; i++){
-//         ans = ans*a;
+//     for (var i = 1; i <= b; i++) {
+//         ans = ans * a;
 //     }
 //     return ans;
 // }
 
-// alert("3 raise to the power 4 is "+power(3,4));
+// alert("3 raise to the power 4 is " + power(3, 4));
 
 
 // // Task # 2
 
-// function checkLeapYear(year){
-//     if(year % 4 == 0 && year % 100 != 0 || year % 400 == 0){
+// function checkLeapYear(year) {
+//     if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
 //         return "Leap Year";
 //     }
-//     else{
+//     else {
 //         return "not a Leap Year";
 //     }
 // }
 
-// var year = prompt("Enter the year","Year hear");
-// alert(year + " is "+checkLeapYear(year));
+// var year = prompt("Enter the year", "Year hear");
+// alert(year + " is " + checkLeapYear(year));
 
 
 // // Task # 3
 
-// function calcS(a, b, c){
-//     var sum = a+b+c;
-//     return sum/2;
+// function calcS(a, b, c) {
+//     var sum = a + b + c;
+//     return sum / 2;
 
 // }
-// function calcArea(a, b, c){
+// function calcArea(a, b, c) {
 //     var S = calcS(a, b, c);
-//     var area = S*(S - a)*(S - b)*(S - c);
+//     var area = S * (S - a) * (S - b) * (S - c);
 //     return area;
 // }
 
 // var a = +prompt("Enter value of side a");
 // var b = +prompt("Enter value of side b");
 // var c = +prompt("Enter value of side c");
-// alert("Area of triangle is "+calcArea(a,b,c));
+// alert("Area of triangle is " + calcArea(a, b, c));
 
 
 // // Task # 4
 
-
+// function calcPercentage(m1, m2, m3) {
+//     return ((m1 + m2 + m3) * 100) / 300;
+// }
+// function calcAverage(m1, m2, m3) {
+//     return (m1 + m2 + m3) / 3
+// }
+// function mainFunction(m1, m2, m3) {
+//     document.write("<br> Marks of subject 1 =" + m1);
+//     document.write(" <br> Marks of subject 2 = " + m2);
+//     document.write(" <br> Marks of subject 3 = " + m3);
+//     document.write(" <br> Total Marks = " + (m1 + m2 + m3));
+//     document.write("<br> Average Marks = " + calcAverage(m1, m2, m3));
+//     document.write(" <br> Percentage = " + calcPercentage(m1, m2, m3) + "%");
+// }
+// var sub1 = +prompt("Enter marks of Subject 1");
+// var sub2 = +prompt("Enter marks of Subject 2");
+// var sub3 = +prompt("Enter marks of Subject 3");
+// mainFunction(sub1, sub2, sub3);
 
 
 // // Task # 5
+
+// function customIndexOf(word, char) {
+//     var index;
+//     for (var i = 0; i < word.length; i++) {
+//         if (word[i] == char) {
+//             index = i;
+//             break
+//         }
+//         else {
+//             index = -1
+//         }
+//     }
+//     return index;
+// }
+// var word = "Pakistani";
+// var index = customIndexOf(word, "n");
+// document.write("String: " + word);
+// document.write("<br>Index of 'n': " + index);
+
+
 // // Task # 6
+
+// function removeVowels(sen) {
+//     for (var i = 0; i < sen.length; i++) {
+//         if (sen[i] === 'A' || sen[i] === 'E' || sen[i] === 'e' || sen[i] == 'a' || sen[i] === 'I' || sen[i] === 'i' || sen[i] === 'O' || sen[i] === 'o' || sen[i] === 'U' || sen[i] === 'u') {
+//             sen = sen.slice(0, i) + sen.slice(i + 1)
+//         }
+//     }
+//     alert("Now Sentence is " + sen);
+// }
+// removeVowels(prompt("Enter any sentence"));
+
+
 // // Task # 7
+
+// function countSuccessiveVowels(sen) {
+//     var st = "", cnt = 0;
+//     for (var i = 0; i < sen.length; i++) {
+//         (sen[i] + sen[i + 1]).toLowerCase();
+//         switch (sen[i] + sen[i + 1]) {
+//             case 'ae':
+//             case 'ai':
+//             case 'ao':
+//             case 'au':
+//             case 'aa':
+
+//             case 'ea':
+//             case 'ei':
+//             case 'eo':
+//             case 'ee':
+//             case 'eu':
+
+//             case 'ia':
+//             case 'ie':
+//             case 'io':
+//             case 'iu':
+//             case 'ii':
+//             case 'oa':
+//             case 'oe':
+//             case 'oi':
+//             case 'ou':
+//             case 'oo':
+
+//             case 'ua':
+//             case 'ui':
+//             case 'uo':
+//             case 'uu':
+//             case 'ue':
+//                 st = st + sen[i] + sen[i + 1] + ",";
+//                 cnt++;
+//                 break;
+//             default:
+//                 continue;
+//         }
+//     }
+//     document.write("<br>Sentence = " + sen + "<br>Occurrences are = " + st + "<br>Total number = " + cnt);
+// }
+// countSuccessiveVowels(" Pleases read this application and give me gratuity ");
+
+
 // // Task # 8
+
+// function feet(dis) {
+//     document.write("<br>Distance in feets = " + (dis * 1000 * 3.2) + "ft");
+// }
+// function meter(dis) {
+//     document.write("<br>Distance in metres = " + (dis * 1000) + "m");
+// }
+// function cm(dis) {
+//     document.write("<br>Distance in centimeters = " + (dis * 1000 * 100) + " cm");
+// }
+// function inches(dis) {
+//     document.write("<br>Distance in inches = " + (dis * 1000 * 39.37) + " inches");
+// }
+// var distance = +prompt("Enter distance in km","Distance in km");
+// feet(distance);
+// meter(distance);
+// cm(distance);
+// inches(distance);
+
+
 // // Task # 9
+
+// function calcOvertimePay(tHours) {
+//     if (tHours > 40) {
+//         var overTime = tHours - 40;
+//         var overTimePay = overTime * 12;
+//         document.write("<br> Overtime pay is " + overTimePay + " RS");
+//     }
+//     else {
+//         document.write("<br> No Overtime pay");
+//     }
+// }
+// var totalHours = +prompt("Enter total worked hours");
+// calcOvertimePay(totalHours);
+
+
 // // Task # 10
-// // Task # 11
+
+// var cash = +prompt("Enter amount to be withdrawn");
+// var hundred = 0, fifty = 0, ten = 0;
+// if (cash < 10) {
+//     alert("Cash is less than 10");
+// }
+// else {
+//     for (var i = 0; cash >= 10; i++) {
+//         if (cash >= 100) {
+//             hundred++;
+//             cash = cash - 100;
+//         }
+//         else if (cash >= 50) {
+//             fifty++;
+//             cash = cash - 50;
+//         }
+//         else if (cash >= 10) {
+//             ten++;
+//             cash = cash - 10;
+//         }
+//     }
+// }
+// document.write("<br>You will have " + hundred + " Hundred notes " + fifty + " fifty notes and " + ten + " ten notes");
 
 
 
@@ -98,12 +250,12 @@
 //     cell4.innerHTML = "<button id='edit' type='button' onclick='edit(this)'>Edit</button>";
 //     cell5.innerHTML = "<button id='del' type='button' onclick='del(this)'>Delete</button>";
 // }
-// function del(cell){
+// function del(cell) {
 //     var row = cell.parentNode.parentNode;
 //     row.parentNode.removeChild(row);
 
 // }
-// function edit(cell){
+// function edit(cell) {
 //     var row = cell.parentNode.parentNode;
 //     document.getElementById("index").value = row.cells[0].innerHTML;
 //     document.getElementById("name").value = row.cells[1].innerHTML;
@@ -126,15 +278,15 @@
 //     var modal = document.getElementById('modal');
 //     modal.classList.add('modal-open');
 //     modal.classList.remove('modal-close');
-//     modal.style.display= "block";
+//     modal.style.display = "block";
 //     document.getElementById("modal-img").src = path.src;
 //     console.log(path);
 // }
-// function onClosedImagModal(){
+// function onClosedImagModal() {
 //     var modal = document.getElementById('modal');
 //     modal.classList.remove('modal-open');
 //     modal.classList.add('modal-close');
-//     setTimeout(()=>{ modal.style.display = "none"; }, 550)
+//     setTimeout(() => { modal.style.display = "none"; }, 550)
 // }
 
 
@@ -145,14 +297,14 @@
 // // Task # 2
 
 // para.style.fontSize = "15px";
-// function zoomin(){
+// function zoomin() {
 //     var para = document.getElementById("para");
-//     para.style.fontSize = (parseFloat(para.style.fontSize)+10)+"px";
+//     para.style.fontSize = (parseFloat(para.style.fontSize) + 10) + "px";
 // }
 
-// function zoomout(){
+// function zoomout() {
 //     var para = document.getElementById("para");
-//     para.style.fontSize = (parseFloat(para.style.fontSize)-10)+"px";
+//     para.style.fontSize = (parseFloat(para.style.fontSize) - 10) + "px";
 // }
 
 
